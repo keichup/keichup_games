@@ -1,25 +1,18 @@
-var app = require('http').createServer(handler)
-  , io = require('socket.io').listen(app)
-  , fs = require('fs')
- 
-app.listen(process.env.PORT || 3000);
- 
-function handler (req, res) {
-  fs.readFile(__dirname + '/index.html',
-  function (err, data) {
-    if (err) {
-      res.writeHead(500);
-      return res.end('Error loading index.html');
-    }
- 
-    res.writeHead(200);
-    res.end(data);
-  });
-}
- 
-io.sockets.on('connection', function (socket) {
-  socket.emit('news', { hello: 'world' });
-  socket.on('my other event', function (data) {
-    console.log(data);
-  });
+// Change
+// app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
+// End
+  console.log("Express server listening on port %d in %s mode",
+      app.address().port, app.settings.env);
 });
+// Add
+var socketio = require('socket.io');
+var io = socketio.listen(app);
+var count = 0;
+setInterval(function() {
+  var date = new Date();
+  count++;
+  io.sockets.emit('tick', date, count);
+  console.log('AFTER: emit(): ' + date + ', ' + count);
+}, 1000);
+// End

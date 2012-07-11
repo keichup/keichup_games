@@ -1,0 +1,17 @@
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<!-- Add -->
+<p>Date: <span id="date"></span></p>
+<p>Count: <span id="count"></span></p>
+<script src="/javascripts/jquery-1.7.2.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+$(function() {
+  var socket = io.connect();
+  socket.on('tick', function(date, count) {
+    $('#date').text(date);
+    $('#count').text(count);
+  });
+});
+</script>
+<!-- End -->

@@ -1,10 +1,11 @@
 {
-  "name": "warm-galaxy-3225",
-  "version": "0.0.1",
-  "dependencies": {
-    "express": "2.5.9"
-  },
-  "engines": {
-    "node": "0.6.18"
-  }
+	"name": "warm-galaxy-3225",
+	"version": "0.0.1",
+ 	"dependencies": {
+		"express": "2.5.9",
+	 	"socket.io": "0.9.6"
+	},
+	"engines": {
+		"node": "0.6.18"
+	}
 }
