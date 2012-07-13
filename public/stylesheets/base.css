@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/*CSS INFOMATION=======================
+
+Controller
+BASE CSS
+
+File name : base.css
+   
+====================================*/
+
+/*-----------------------------------------
+ 
+ =LAYOUT
+-----------------------------------------*/
+/*
+html{
+    -webkit-text-size-adjust: none;
+}
+*/
+
+
+body{
+	width:100%;
+	-webkit-user-select: none;
+	zoom:0.5;
+	font:14px/1.231 "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	background-color: #f47723;
+}
+#wrapper{
+	height:100%;
+	width:100%;
+	/*width:960px;*/
+}
+
+#contents{
+		height:100%;
+	width:100%;
+	/*width:960px;*/
+}
+
+
+/*----------------------
+     
+-----------------------*/
+@media only screen and (orientation : landscape) { /*横向きの際に適用*/
+
+#debug{
+	width:100%;
+	font-size: 20pt;
+	color: #ffffff;
+	position:absolute;
+	bottom:0;
+	background-color: #f55555;
+}
+
+#logo{
+	position:absolute;
+	/*top:90px;
+	left:70px;*/
+	top:10%;
+	left:8%;
+	height:74px;
+	width:440px;
+	background: url(../../images/logo.png) 0 0 no-repeat;
+}
+
+#plus_btn_set{
+	position:absolute;
+	/*top:260px;
+	left:70px;*/
+	top:42%;
+	left:8%;
+	height:326px;
+	width:326px;
+	margin: 0 auto;  
+	background: url(../../images/controller_plus_bg.png) 0 0 no-repeat;
+}
+
+#maru_btn_all{
+	position:absolute;
+	/*top:410px;
+	left:540px;*/
+	top:78%;
+	left:56%;
+	height:154px;
+	width:400px;
+}
+
+#select_btn_all{
+	position:relative;
+	top:90px;
+	left:745px;
+	height:56px;
+	width:132px;
+	background: url(../../images/controller_select_bg.png) 0 0 no-repeat;
+}
+
+
+}
+
+
+/*----------------------
+     
+-----------------------*/
+@media only screen and (orientation : portrait) { /*縦向きの際に適用*/
+
+#debug{
+	width:100%;
+	font-size: 20pt;
+	color: #ffffff;
+	position:absolute;
+	bottom:0;
+	background-color: #f55555;
+}
+
+#logo{
+	position:absolute;
+	/*top:90px;
+	left:70px;*/
+	top:10%;
+	left:8%;
+	height:74px;
+	width:440px;
+	background: url(../../images/logo.png) 0 0 no-repeat;
+}
+
+#plus_btn_set{
+	position:absolute;
+	/*top:260px;
+	left:70px;*/
+	top:35%;
+	left:8%;
+	height:326px;
+	width:326px;
+	margin: 0 auto;  
+	background: url(../../images/controller_plus_bg.png) 0 0 no-repeat;
+}
+
+#maru_btn_all{
+	position:absolute;
+	/*top:710px;
+	left:250px;*/
+	top:90%;
+	left:38%;
+	height:154px;
+	width:400px;
+}
+
+#select_btn_all{
+	position:absolute;
+	top:180px;
+	left:450px;
+	height:56px;
+	width:132px;
+	background: url(../../images/controller_select_bg.png) 0 0 no-repeat;
+}
+
+}
+
+/*----------------------
+     
+-----------------------*/
+
+#plus_btn{
+	position:relative;
+	top:0px;
+	left:0px;
+	height:326px;
+	width:326px;
+	background: url(../../images/controller_plus.png) 0 0 no-repeat;
+}
+
+#maru_btn_all ul{
+	list-style:none;
+}
+
+#maru_btn_all li{
+	float:left;
+	margin:0 40px 0 0;
+}
+
+#select_btn{
+	position:relative;
+	height:36px;
+	width:132px;
+	top:20px;
+	background: url(../../images/controller_select.png) 0 0 no-repeat;
+}
+
+.maru_btn_set{
+	position:relative;
+	top:0px;
+	left:0px;
+	height:154px;
+	width:154px;
+	background: url(../../images/controller_maru_bg.png) 0 0 no-repeat;
+}
+
+.maru_btn{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:154px;
+	width:154px;
+	background: url(../../images/controller_maru.png) 0 0 no-repeat;
+}
+
